@@ -1,3 +1,17 @@
 body{
     background-color: pink;
 }
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-container h1 {
+    color: white;
+    margin: 0 10px; /* 제목과 이미지 간의 간격 */
+}
+
+.neon {
+    color: #fff;
+    text-shadow: 0 0 3px #fff, 0 0 8px #fff, 0 0 10px #f19ec8, 0 0 15px #f19ec8, 0 0 20px #f19ec8;
+  }
