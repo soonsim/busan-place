@@ -9,31 +9,41 @@
 <body>
     <div class="container">
         <div class="title-container">
-            <h1 class="neon" style="display: table-cell; vertical-align: middle;font-weight: bold;">부산 명소 내가 다 찍었찍</h1>
+            <h1 class="neon" style="display: table-cell; vertical-align: middle; font-weight: bold;">부산 명소 내가 다 찍었찍</h1>
             <img src="./mouse.png" alt="Mouse Image" height="100" width="100">
         </div>
     </div>
-    <h2 style="color: aliceblue;">1. 광안리해수욕장</h2>
-    <!--
-	* 카카오맵 - 약도서비스
-	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
-	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
--->
-<!-- 1. 약도 노드 -->
-<div id="daumRoughmapContainer1731289979904" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+    
+    <!-- 광안리해수욕장과 해운대블루라인파크를 나란히 배치 -->
+    <div style="display: flex; gap: 100px;">
+        <!-- 광안리해수욕장 -->
+        <div>
+            <h2 style="color: aliceblue;">1. 광안리해수욕장</h2>
+            <div id="daumRoughmapContainer1731289979904" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1731289979904",
+                    "key" : "2m72m",
+                    "mapWidth" : "320",
+                    "mapHeight" : "360"
+                }).render();
+            </script>
+        </div>
 
-<!-- 2. 설치 스크립트 -->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1731289979904",
-		"key" : "2m72m",
-		"mapWidth" : "640",
-		"mapHeight" : "360"
-	}).render();
-</script>
-       
+        <!-- 해운대 블루라인 파크 -->
+        <div>
+            <h2 style="color: aliceblue;">2. 해운대블루라인파크 - 미포정거장</h2>
+            <div id="daumRoughmapContainer1731412261388" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1731412261388",
+                    "key" : "2m7ub",
+                    "mapWidth" : "320",
+                    "mapHeight" : "360"
+                }).render();
+            </script>
+        </div>
+    </div>
 </body>
 </html>
