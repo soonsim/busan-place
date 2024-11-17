@@ -15,24 +15,18 @@
 </head>
 
 <body>
-    <style>
-        * {
-
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-
-        }
-    </style>
     <form method="POST" action="/login">
         <h1>LOGIN</h1>
-        <label for="username">Username </label><input type="text" name="username" />
+        <label for="username">Username </label>
+        <input type="text" id="username" name="username" required />
         <br />
-        <label for="password">Password </label><input type="password" name="password" />
+        <label for="password">Password </label>
+        <input type="password" id="password" name="password" required />
         <br />
-
-        <input type="button" value="Login" onclick="location.href='main.html'">
-
+        <input type="submit" value="Login">
+    </form>
+    
+    <script src="script.js"></script>
 
 </body>
 
